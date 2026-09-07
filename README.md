@@ -2,7 +2,7 @@
 
 These are my first small exercises in C. I use them to try things out and keep notes on what I have looked into so far.
 
-The `c` files are in the `exercises` folder. Compiled versions go into the `build` folder.
+The `.c` files are in the `exercises` folder. Compiled versions go into the `build` folder.
 
 ## Exercises
 
@@ -19,18 +19,26 @@ A small 3D-printing example I used to learn about variables.
 Things I tried here:
 
 `int` for whole numbers
+
 `double` for decimal numbers
+
 `char` for a single character
+
 `char[]` for text
+
 Simple calculations with variables
 Printing values with `printf()`
 
 Some useful placeholders:
 
 `%d` for an `int`
+
 `%c` for a single character
+
 `%s` for a `string`
+
 `%f` for a decimal number
+
 `%.2f` for a decimal number with two decimal places
 
 ### conditions.c
