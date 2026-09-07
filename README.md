@@ -1,28 +1,60 @@
 # C - Basics Exercises
 
-I want to get to know C a bit more, since it's one of the first and most basic programming languages out there. 
+These are my first small exercises in C. I use them to try things out and keep notes on what I have looked into so far.
 
-All exercises are located in the 'exercises'-folder and named accordingly. 
-
-Compiled files are in the 'build'-folder.
+The `c` files are in the `exercises` folder. Compiled versions go into the `build` folder.
 
 ## Exercises
 
 ### hello.c
 
-A simple 'first program'-type of exercise. 
-It prints the classic "Hello, World!" text.
+My first C program.
+
+It uses `printf()` to print `"Hello, World!"` in the terminal.
 
 ### variables.c
 
-A function that declares differnt types of variables in a 3D-Print example.
-Those variables are then printed nicely row by row. 
+A small 3D-printing example I used to learn about variables.
 
-It shows how different variable-types work and how to print them.
+Things I tried here:
+
+`int` for whole numbers
+`double` for decimal numbers
+`char` for a single character
+`char[]` for text
+Simple calculations with variables
+Printing values with `printf()`
+
+Some useful placeholders:
+
+`%d` for an `int`
+`%c` for a single character
+`%s` for a `string`
+`%f` for a decimal number
+`%.2f` for a decimal number with two decimal places
 
 ### conditions.c
 
-Shows how if - elseif - else statements work and how it is displayed when printed. 
+My first exercise using `if`, `else if`, and `else`.
 
-###
+The program checks a nozzle temperature and prints whether it is too low, okay, or too high.
 
+### input.c
+
+My first exercise with user input.
+
+The program asks for a nozzle temperature using `scanf()` and then checks the entered value with the conditions from the previous exercise.
+
+`&nozzle_temperature` tells `scanf()` where the entered value should be stored.
+
+## Useful commands
+
+Compile a file:
+
+gcc -Wall -Wextra -Werror exercises/input.c -o build/input
+
+Run the compiled program:
+
+./build/input
+
+The filename needs to be changed depending on which exercise is compiled.
